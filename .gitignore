@@ -5,5 +5,8 @@
 !.gitignore
 
 # Do not ignore the dist directory
-!dist/
-!dist/**
+!assets/
+!assets/**
+!index.html
+!3.png
+!vite.svg
