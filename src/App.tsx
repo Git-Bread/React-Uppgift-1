@@ -8,11 +8,13 @@ import Footer from './components/footer';
 import { fetchGamesFromJSON, GameList } from './scripts/jsonReader';
 
 function App() {
-  const [games, setGames] = useState<GameList[]>([]);
+  //binds them and initialiszes them as empty lists
+  const [games, getGames] = useState<GameList[]>([]);
 
+  //getGames gets the gamedata and updates it into games
   useEffect(() => {
     const gamesData = fetchGamesFromJSON();
-    setGames(gamesData);
+    getGames(gamesData);
   }, []);
 
   return (

@@ -7,6 +7,7 @@ interface Props {
     good: boolean;
 }
 
+//games prop class with all the funny values
 const Game: React.FC<Props> = ({ title, description, releaseDate, genre, rating, good }) => {
     return (
         <article className="box mr-4 FIX-MARGIN">

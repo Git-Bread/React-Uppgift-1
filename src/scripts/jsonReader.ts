@@ -1,4 +1,6 @@
 import gamesData from '../assets/games.json';
+//separate script to load all the games, makes the structure better
+
 
 export interface GameList {
   title: string;

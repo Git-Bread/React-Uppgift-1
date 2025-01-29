@@ -4,6 +4,7 @@ interface Props {
     imageAlt?: string;
 }
 
+//header without nav, img is highly placeholder and using some ugly size-locking
 const Header: React.FC<Props> = ({ title, image, imageAlt = "No Alt" }) => {
     return (
         <>
