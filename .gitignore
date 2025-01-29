@@ -5,4 +5,4 @@
 !.gitignore
 
 # Do not ignore the dist directory
-!dist/
+!dist/*
