@@ -9,12 +9,14 @@ interface Props {
 const Header: React.FC<Props> = ({ title, image, imageAlt = "No Alt" }) => {
     return (
         <>
-            <header className='header'>
-                <h1 className="title">{title}</h1>
+            <header className='p-4 border-bottom border-3'>
+                <h1 className="title has-text-centered">{title}</h1>
             </header>
-            <div>
-                <img src={image} className="hero" alt={imageAlt} />
-            </div>
+            <section className="hero">
+                <figure className='image is-3by1'>
+                    <img src={image} className="image" alt={imageAlt} />
+                </figure>
+            </section>
         </>
     );
 };
