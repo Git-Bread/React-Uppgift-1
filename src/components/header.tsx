@@ -12,9 +12,9 @@ const Header: React.FC<Props> = ({ title, image, imageAlt = "No Alt" }) => {
             <header className='p-4 border-bottom border-3'>
                 <h1 className="title has-text-centered">{title}</h1>
             </header>
-            <section className="hero">
-                <figure className='image is-3by1'>
-                    <img src={image} className="image" alt={imageAlt} />
+            <section>
+                <figure className='image is-3by1 mh-400 m-auto'>
+                    <img src={image} className="image mh-400 is-centered" alt={imageAlt} />
                 </figure>
             </section>
         </>
