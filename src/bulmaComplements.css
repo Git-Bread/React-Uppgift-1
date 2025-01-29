@@ -10,6 +10,9 @@ p {
 }
 /*Fixes cursed bulma box handling*/
 .FIX-MARGIN:last-child { margin-bottom: 1.5rem; }
+#wrapper {
+  min-height: 100vh;
+}
 
 
 /* Border Sides */

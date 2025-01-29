@@ -1,20 +1,24 @@
-import React from 'react';
-
 interface Props {
     title: string;
     description: string;
     releaseDate: string;
     genre: string;
+    rating: number;
+    good: boolean;
 }
 
-const Game: React.FC<Props> = ({ title, description, releaseDate, genre }) => {
+const Game: React.FC<Props> = ({ title, description, releaseDate, genre, rating, good }) => {
     return (
-        <article className="box column is-narrow mr-4 FIX-MARGIN">
+        <article className="box mr-4 FIX-MARGIN">
             <div className="content">
                 <h2 className="title">{title}</h2>
                 <p className="subtitle">{genre}</p>
                 <p>{description}</p>
-                <p><strong>Release Date:</strong> {releaseDate}</p>
+                <div className="is-flex is-justify-content-space-between">
+                    <p>Release Date: {releaseDate}</p>
+                    <p>Rating: {rating}/10</p>
+                    <p>Good: {good ? "Yes" : "No"}</p>
+                </div>
             </div>
         </article>
     );
